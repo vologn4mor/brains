@@ -1,0 +1,22 @@
+{
+  "name": "brains",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.5.1",
+    "@vue/eslint-config-airbnb": "^7.0.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "vite": "^4.3.4"
+  }
+}
