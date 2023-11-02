@@ -1,5 +1,5 @@
 <template>
-    <button @click="$emit('click')">
+    <button :style="padding ? `padding: ${padding};` : null" @click="$emit('click')">
         {{ text }}
     </button>
 </template>
@@ -10,6 +10,11 @@ export default {
         text: {
             type: String,
             required: true
+        },
+        padding: {
+            type: String,
+            required: false,
+            default: ''
         }
     }
 }

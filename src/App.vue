@@ -25,6 +25,11 @@ export default {
 }
 
 @font-face {
+  font-family: "SF Mono Heavy";
+  src: url("./assets/fonts/SFMono-Heavy.otf");
+}
+
+@font-face {
   font-family: "SF Pro";
   src: url("./assets/fonts/SF-Pro-Display-Regular.otf");
 }
@@ -35,7 +40,8 @@ body {
 
 p,
 span,
-a {
+a,
+h1 {
   color: #FFFFFF;
   font-family: "SF Mono";
 }
