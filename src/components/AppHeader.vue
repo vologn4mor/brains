@@ -78,6 +78,7 @@ export default {
     position: sticky;
     top: 0;
     background-color: #060505;
+    z-index: 1;
 
     .menu {
         display: flex;

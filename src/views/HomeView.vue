@@ -203,12 +203,99 @@
             </div>
         </div>
     </div>
+    <div class="technical-overview">
+        <div class="technical-overview-container container">
+            <div class="technical-block">
+                <div class="left-block">
+                    <h2>Technical <br /> overview</h2>
+                    <a href="/" class="visit-link">
+                        <p>Visit website</p>
+                        <img :src="arrRight" alt="">
+                    </a>
+                </div>
+                <div class="right-block">
+                    <div class="first-list">
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Smart Contract development</p>
+                        </div>
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Mobile & Desktop Software development</p>
+                        </div>
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Professional custom UX</p>
+                        </div>
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Advertising campaign management</p>
+                        </div>
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Infrastructure setup and monitoring</p>
+                        </div>
+                    </div>
+                    <div class="second-list">
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Token gated technologies</p>
+                        </div>
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Brand development</p>
+                        </div>
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Ongoing business support</p>
+                        </div>
+                        <div class="check">
+                            <img :src="check" alt="">
+                            <p>Community building and growing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expecting container">
+        <div class="expecting-block">
+            <h2>Why do we need you and what we<br />
+                are expecting from you?</h2>
+            <div class="first-block">
+                <div class="card-with-img" v-for="(item, index) in expectingCards" :key="index">
+                    <img :src="item.img" alt="">
+                    <p>{{ item.text }}</p>
+                </div>
+            </div>
+            <div class="second-block">
+                <div class="left">
+                    <p class="title">Embrace the future of Web3 entrepreneurship with power of Brainz.</p>
+                    <p class="text">Our intelligent agents are designed to drive growth,
+                        enhance user experience, and simplify complex processes.</p>
+                    <AppButton text="Revolutionize your startup" padding="15px 40px" />
+                </div>
+                <div class="right">
+                    <img :src="expectingBigImage" alt="">
+                </div>
+            </div>
+            <div class="third-block">
+                <AppFaqCard />
+                <AppFaqCard />
+                <AppFaqCard />
+                <AppFaqCard />
+            </div>
+        </div>
+    </div>
+    <div class="breaker"></div>
 </template>
 
 <script>
+
 import hands from "@/assets/HomeView/hands.png"
 import AppButton from "../components/AppButton.vue";
 import AppCardInfo from "../components/AppCardInfo.vue";
+import AppFaqCard from "../components/AppFaqCard.vue"
 import meetOurAgentsInfo from "../jsons/HomeView/meet-our-agents";
 import check from "@/assets/HomeView/ThirdBlock/check.svg"
 import bankrote from "@/assets/HomeView/ThirdBlock/bankrote.svg"
@@ -219,6 +306,9 @@ import wishes from "@/assets/HomeView/ThirdBlock/wishes.png"
 import boomerang from "@/assets/HomeView/ThirdBlock/boomerang.png"
 import alpha from "@/assets/HomeView/ThirdBlock/alpha.png"
 import sonft from "@/assets/HomeView/ThirdBlock/sonft.png"
+import arrRight from "@/assets/HomeView/TechnicalOverview/arrow-right.svg"
+import expectingCards from "@/jsons/HomeView/expecting-cards"
+import expectingBigImage from "@/assets/HomeView/Expecting/second-block-image.png"
 
 export default {
     data() {
@@ -233,10 +323,13 @@ export default {
             wishes,
             boomerang,
             alpha,
-            sonft
+            sonft,
+            arrRight,
+            expectingCards,
+            expectingBigImage
         };
     },
-    components: { AppButton, AppCardInfo }
+    components: { AppButton, AppCardInfo, AppFaqCard }
 }
 </script>
 
@@ -472,6 +565,135 @@ export default {
                     opacity: 0.5;
                 }
             }
+        }
+    }
+}
+
+.technical-overview {
+    background-image: url("/src/assets/HomeView/TechnicalOverview/lines.svg");
+    height: 420px;
+    margin: 190px 0 180px 0;
+    display: flex;
+
+    .technical-overview-container {
+        display: flex;
+
+        .technical-block {
+            margin: 0 100px;
+            display: flex;
+
+            .left-block,
+            .right-block {
+                margin-top: 100px;
+            }
+
+            .left-block {
+                margin-right: 250px;
+
+                h2 {
+                    font-family: "SF Mono Heavy";
+                    font-size: 40px;
+                    margin-top: 0;
+                }
+
+                .visit-link {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        color: #B6FFFA;
+                    }
+                }
+            }
+
+            .right-block {
+                display: flex;
+
+                .first-list,
+                .second-list {
+                    .check {
+                        display: flex;
+
+                        p {
+                            margin-left: 10px;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+
+                .first-list {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.expecting {
+    .expecting-block {
+        margin: 0 100px;
+
+        h2 {
+            font-family: "SF Mono Bold";
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .first-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .card-with-img {
+                background-color: #161616;
+                padding: 40px;
+                max-width: 328px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                p {
+                    max-width: 400px;
+                    margin-left: 10px;
+                }
+
+            }
+        }
+
+        .second-block {
+            background-color: #222121;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                margin-left: 100px;
+
+                .title {
+                    font-family: "SF Mono Bold";
+                    font-size: 40px;
+                    max-width: 550px;
+                    margin: 0;
+                }
+
+                .text {
+                    font-family: "SF Pro";
+                    font-size: 18px;
+                    max-width: 440px;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .third-block {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 615px 615px;
+            grid-gap: 10px;
+            align-items: start;
         }
     }
 }
