@@ -71,10 +71,13 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    margin: 20px 45px;
+    padding: 20px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #060505;
 
     .menu {
         display: flex;
@@ -83,6 +86,7 @@ export default {
             display: flex;
             align-items: center;
             margin-left: 30px;
+            opacity: 0.5;
         }
 
         span {
@@ -91,6 +95,10 @@ export default {
 
         button {
             margin-left: 30px
+        }
+
+        .router-link-active {
+            opacity: 1;
         }
     }
 }

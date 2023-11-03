@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div>
     <AppHeader />
     <RouterView />
   </div>
@@ -34,6 +34,11 @@ export default {
   src: url("./assets/fonts/SF-Pro-Display-Regular.otf");
 }
 
+@font-face {
+  font-family: "SF Pro Medium";
+  src: url("./assets/fonts/SF-Pro-Display-Medium.otf");
+}
+
 body {
   background-color: $main-dark;
 }
@@ -41,7 +46,9 @@ body {
 p,
 span,
 a,
-h1 {
+h1,
+h2,
+h3 {
   color: #FFFFFF;
   font-family: "SF Mono";
 }
@@ -50,7 +57,11 @@ a {
   text-decoration: none;
 }
 
-.main-container {
+button:hover {
+  cursor: pointer;
+}
+
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
