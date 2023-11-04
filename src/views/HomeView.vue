@@ -704,3 +704,7 @@ export default {
     }
 }
 </style>
+
+// Mobile
+
+<style lang="scss" scoped></style>
