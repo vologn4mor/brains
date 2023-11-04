@@ -16,6 +16,11 @@ const routes = [
     name: "Services",
     component: () => import("../views/ServicesView"),
   },
+  {
+    path: "/about",
+    name: "About",
+    component: () => import("../views/AboutView"),
+  },
 ];
 
 const router = createRouter({
