@@ -11,6 +11,11 @@ const routes = [
     name: "agents",
     component: () => import("../views/AgentView"),
   },
+  {
+    path: "/services",
+    name: "agents",
+    component: () => import("../views/ServicesView"),
+  },
 ];
 
 const router = createRouter({

@@ -336,6 +336,7 @@ export default {
 <style lang="scss" scoped>
 .main-block {
     background-color: #060505;
+    padding-top: 92px;
 
     .main-container {
         background: url("/src/assets/HomeView/hands.png");
@@ -358,6 +359,11 @@ export default {
             font-size: 32px;
             font-family: "SF Mono Heavy";
             margin-top: 0;
+        }
+
+        .offer {
+            font-size: 14px;
+            opacity: 0.5;
         }
 
         .main-text {

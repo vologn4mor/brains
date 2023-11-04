@@ -65,4 +65,9 @@ button:hover {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.breaker-lines {
+  background-image: url("/src/assets/HomeView/lines-small.svg");
+  height: 17px;
+}
 </style>

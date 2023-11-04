@@ -103,7 +103,6 @@ export default {
     }
 
     .schedule {
-        // transition: 0.5s;
         opacity: 1;
     }
 }

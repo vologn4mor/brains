@@ -75,9 +75,10 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #060505;
+    position: absolute;
+    width: 94%;
+    // top: 0;
+    // background-color: #060505;
     z-index: 1;
 
     .menu {
