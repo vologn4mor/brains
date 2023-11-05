@@ -21,6 +21,11 @@ const routes = [
     name: "About",
     component: () => import("../views/AboutView"),
   },
+  {
+    path: "/contacts",
+    name: "Contacts",
+    component: () => import("../views/ContactsView"),
+  },
 ];
 
 const router = createRouter({

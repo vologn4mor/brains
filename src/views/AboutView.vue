@@ -58,23 +58,95 @@
                 </div>
             </div>
         </div>
-        <div class="fourth-block">
-
+        <div class="fourth-block container">
+            <div class="up-block">
+                <AppCard v-for="(item, index) in fourthBlockData" :key="index">
+                    <div class="card">
+                        <img :src="item.img" alt="img">
+                        <p class="title">{{ item.title }}</p>
+                        <p class="text">{{ item.text }}</p>
+                    </div>
+                </AppCard>
+            </div>
+            <div class="down-block">
+                <AppCard>
+                    <div class="block-container">
+                        <div class="left">
+                            <img :src="cup" alt="img">
+                            <p class="colored">What we do</p>
+                            <p class="title">Empowering Web3 Startups with Intelligent Agents</p>
+                            <p class="text">
+                                At Brains, we are pioneers in providing cutting-edge solutions for Web3 startups. Our
+                                mission is
+                                to
+                                empower Web3 Startups with Intelligent Agents.
+                            </p>
+                            <p class="text">
+                                Here’s an overview of what we do:Our Solutions:We offer a suite of intelligent agents
+                                designed
+                                to
+                                streamline and enhance your startup operations.
+                            </p>
+                            <p class="text">
+                                Training and Support:
+                            </p>
+                            <p class="text">
+                                We provide training and support to ensure our customers get the most out of our solutions.
+                                Our
+                                team
+                                of experts is available to provide assistance and guidance whenever needed.
+                            </p>
+                            <p class="text">
+                                Exit:
+                            </p>
+                            <p class="text">
+                                We help you to sell this business in six-to-twelve months and provide professional support
+                                in
+                                dealing with brokers.
+                            </p>
+                            <AppButton text="Shedule a call" padding="15px 40px" />
+                        </div>
+                        <div class="right">
+                            <div>
+                                <img :src="first" alt="img">
+                            </div>
+                            <div>
+                                <img :src="second" alt="img">
+                                <img :src="third" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </AppCard>
+            </div>
         </div>
+        <div class="breaker-lines breaker"></div>
     </div>
 </template>
 
 <script>
 import secondBlockImage from "@/assets/AboutView/second-block-img.png"
 import atom from "@/assets/AboutView/atom.svg"
+import AppCard from "../components/AppCard.vue";
+import fourthBlockData from "@/jsons/AboutView/fourth-block.js"
+import AppButton from "../components/AppButton.vue";
+import cup from "@/assets/AboutView/FourthBlock/cup.svg"
+import first from "@/assets/AboutView/FourthBlock/first.png"
+import second from "@/assets/AboutView/FourthBlock/second.png"
+import third from "@/assets/AboutView/FourthBlock/third.png"
 
 export default {
     data() {
         return {
             secondBlockImage,
-            atom
-        }
-    }
+            atom,
+            fourthBlockData,
+            first,
+            second,
+            third,
+            cup
+        };
+    },
+    components: { AppCard, AppButton }
 }
 </script>
 
@@ -194,5 +266,80 @@ export default {
             }
         }
     }
+}
+
+.fourth-block {
+    margin-top: 200px;
+
+    .up-block {
+        display: flex;
+        margin: 0 100px;
+        justify-content: space-between;
+
+        div {
+            max-width: 326px;
+
+            .card {
+                .title {
+                    font-family: "SF Mono Bold";
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+                .text {
+                    font-family: "SF Pro";
+                    font-size: 18px;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .down-block {
+        margin: 10px 100px;
+
+        .block-container {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                max-width: 560px;
+
+                .colored {
+                    color: #B6FFFA;
+                    font-family: "SF Mono Bold";
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                .title {
+                    font-family: "SF Mono Bold";
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+                .text {
+                    font-family: "SF Pro";
+                    line-height: 24px;
+                    font-size: 18px;
+                    opacity: 0.5;
+                }
+            }
+
+            .right {
+                div:last-child {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+.breaker {
+    margin: 200px 0 59px 0;
 }
 </style>
