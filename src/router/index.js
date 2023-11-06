@@ -9,7 +9,7 @@ const routes = [
   {
     path: "/agents",
     name: "Agents",
-    component: () => import("../views/AgentView"),
+    component: () => import("../views/AgentsView"),
   },
   {
     path: "/services",
@@ -25,6 +25,21 @@ const routes = [
     path: "/contacts",
     name: "Contacts",
     component: () => import("../views/ContactsView"),
+  },
+  {
+    path: "/onboarding",
+    name: "Onboarding",
+    component: () => import("../views/OnboardingView"),
+  },
+  {
+    path: "/scaling",
+    name: "Scaling",
+    component: () => import("../views/ScalingView"),
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: () => import("../views/BlogView"),
   },
 ];
 

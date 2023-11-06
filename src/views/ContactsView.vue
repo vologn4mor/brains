@@ -58,10 +58,59 @@
                     </AppCard>
                 </div>
                 <div class="down">
-
+                    <div class="cards-block">
+                        <AppCardDefault v-for="(item, index) in secondBlockData" :key="index" :img="item.img"
+                            :title="item.title" :text="item.text" />
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="breaker-lines breaker"></div>
+        <div class="third-block container">
+            <div class="card-block">
+                <AppCard>
+                    <div class="block-container">
+                        <div class="left">
+                            <img :src="atom" alt="img">
+                            <p class="colored">Our mission</p>
+                            <p class="title">Innovate, Thrive, Succeed: Brains and Intelligent Agents Fuel Your Web3
+                                Dominance!</p>
+                            <p class="text">
+                                Our mission at Brains is to empower businesses of all sizes and industries to harness the
+                                power of artificial intelligence to drive growth, efficiency, and innovation.
+                            </p>
+                            <p class="text">
+                                From purchasing NFTs effortlessly with traditional payment methods to minting without the
+                                need for crypto wallets, our existing agents revolutionize how you operate. Engage your
+                                existing audience on social media channels, automate sales, deliver exceptional customer
+                                support, measure customer satisfaction, and build meaningful connections through token-based
+                                marketing – all with Brains.
+                            </p>
+                            <p class="text">
+                                Brains is not just a company; it’s a catalyst for your success. Our intelligent agents,
+                                combined with our agile software development capabilities, empower you to navigate the
+                                ever-evolving landscape of Web3 startups confidently. Let us be the driving force behind
+                                your growth and unleash the full potential of your venture.
+                            </p>
+                            <p class="text">
+                                Join the Brains revolution today and experience the limitless possibilities of intelligent
+                                agents. Together, we will shape the future of Web3 startups.
+                            </p>
+                        </div>
+                        <div class="right">
+                            <div>
+                                <img :src="first" alt="img">
+                            </div>
+                            <div>
+                                <img :src="second" alt="img">
+                                <img :src="third" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </AppCard>
+            </div>
+        </div>
+        <div class="breaker-lines breaker"></div>
     </div>
 </template>
 
@@ -72,16 +121,27 @@ import file from "@/assets/ContactsView/SecondBlock/file.png"
 import map from "@/assets/ContactsView/SecondBlock/map.png"
 import AppInput from "../components/AppInput.vue";
 import AppButton from "../components/AppButton.vue";
+import AppCardDefault from "../components/AppCardDefault.vue";
+import secondBlockData from "../jsons/ContactsView/second-block";
+import first from "@/assets/AboutView/FourthBlock/first.png"
+import second from "@/assets/AboutView/FourthBlock/second.png"
+import third from "@/assets/AboutView/FourthBlock/third.png"
+import atom from "@/assets/AboutView/atom.svg"
 
 export default {
     data() {
         return {
             check,
             file,
-            map
+            map,
+            secondBlockData,
+            first,
+            second,
+            third,
+            atom
         };
     },
-    components: { AppCard, AppInput, AppButton }
+    components: { AppCard, AppInput, AppButton, AppCardDefault }
 }
 </script>
 
@@ -203,6 +263,66 @@ export default {
                 }
             }
         }
+
+        .down {
+            .cards-block {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+
+}
+
+.breaker {
+    margin: 200px 0 180px 0;
+}
+
+.third-block {
+    margin-top: 200px;
+
+    .card-block {
+        margin: 10px 100px;
+
+        .block-container {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                max-width: 560px;
+
+                .colored {
+                    color: #B6FFFA;
+                    font-family: "SF Mono Bold";
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                .title {
+                    font-family: "SF Mono Bold";
+                    font-weight: bold;
+                    font-size: 24px;
+                    max-width: 348px;
+                }
+
+                .text {
+                    font-family: "SF Pro";
+                    line-height: 24px;
+                    font-size: 18px;
+                    opacity: 0.5;
+                }
+            }
+
+            .right {
+                div:last-child {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+
     }
 
 

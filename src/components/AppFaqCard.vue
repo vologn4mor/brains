@@ -1,21 +1,13 @@
 <template>
     <div class="info-card" :class="isOpened ? 'active' : null" @click="isOpened = !isOpened">
         <div class="up-block">
-            <p class="title">Are you in doubts if your idea can be stolen by us?</p>
+            <p class="title">{{ item.title }}</p>
             <p class="plus" :class="isOpened ? 'rotated' : null">+</p>
         </div>
         <div class="info-block" :class="isOpened ? 'opened' : null">
-            <div class="check">
+            <div class="check" v-for="(point, index) in item.points" :key="index">
                 <img :src="check" alt="">
-                <p>Community building and growing</p>
-            </div>
-            <div class="check">
-                <img :src="check" alt="">
-                <p>Community building and growing</p>
-            </div>
-            <div class="check">
-                <img :src="check" alt="">
-                <p>Community building and growing</p>
+                <p>{{ point }}</p>
             </div>
         </div>
     </div>
@@ -29,6 +21,12 @@ export default {
         return {
             isOpened: false,
             check
+        }
+    },
+    props: {
+        item: {
+            type: Object,
+            required: true
         }
     }
 }

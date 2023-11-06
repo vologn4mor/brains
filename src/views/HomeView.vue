@@ -280,10 +280,14 @@
                 </div>
             </div>
             <div class="third-block">
-                <AppFaqCard />
-                <AppFaqCard />
-                <AppFaqCard />
-                <AppFaqCard />
+                <div>
+                    <AppFaqCard :item="faqs[0]" />
+                    <AppFaqCard :item="faqs[1]" />
+                </div>
+                <div>
+                    <AppFaqCard :item="faqs[2]" />
+                    <AppFaqCard :item="faqs[3]" />
+                </div>
             </div>
         </div>
     </div>
@@ -326,7 +330,41 @@ export default {
             sonft,
             arrRight,
             expectingCards,
-            expectingBigImage
+            expectingBigImage,
+            faqs: [
+                {
+                    title: "Are you in doubts if your idea can be stolen by us?",
+                    points: [
+                        "Not needed too many boring and complicated contracts and procedures",
+                        "Simple and clear agreement",
+                        "You’ll see the first our working steps before you can expect it",
+                    ]
+                },
+                {
+                    title: "You are not so well-known person and you need marketing?",
+                    points: [
+                        "Not needed too many boring and complicated contracts and procedures",
+                        "Simple and clear agreement",
+                        "You’ll see the first our working steps before you can expect it",
+                    ]
+                },
+                {
+                    title: "Difficult to explain your idea?",
+                    points: [
+                        "Not needed too many boring and complicated contracts and procedures",
+                        "Simple and clear agreement",
+                        "You’ll see the first our working steps before you can expect it",
+                    ]
+                },
+                {
+                    title: "Scared about the lawyer procedures?",
+                    points: [
+                        "Not needed too many boring and complicated contracts and procedures",
+                        "Simple and clear agreement",
+                        "You’ll see the first our working steps before you can expect it",
+                    ]
+                },
+            ]
         };
     },
     components: { AppButton, AppCardInfo, AppFaqCard }
@@ -700,6 +738,10 @@ export default {
             grid-template-columns: 615px 615px;
             grid-gap: 10px;
             align-items: start;
+
+            div {
+                margin-bottom: 10px;
+            }
         }
     }
 }

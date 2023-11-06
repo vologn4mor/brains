@@ -5,8 +5,8 @@
                 <img :src="logo" alt="logo" class="logo">
                 <div class="mobile-route">
                     <img :src="arrRight" alt="" class="arr-right">
-                    <img :src="currentRoute.img" alt="">
-                    <p class="route-title">{{ currentRoute.title }}</p>
+                    <img :src="currentRoute?.img" alt="">
+                    <p class="route-title">{{ currentRoute?.title }}</p>
                 </div>
             </div>
             <div class="burger-menu" @click="isOpened = !isOpened">
