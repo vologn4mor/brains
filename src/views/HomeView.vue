@@ -179,7 +179,49 @@
                 </div>
             </div>
         </div>
-        <div class="block">
+        <h2 class="mobile">How it works</h2>
+        <div class="mobile how-it-works-block">
+            <div class="small-card">
+                <p class="number">1</p>
+                <p class="text">Short interview
+                    to ensure we align</p>
+            </div>
+            <div class="small-card">
+                <p class="number">2</p>
+                <p class="text">Deep discussion to arrange
+                    the roadmap and handshake</p>
+            </div>
+            <div class="small-card">
+                <p class="number">3</p>
+                <p class="text">Professional UI/UX design</p>
+            </div>
+            <div class="small-card">
+                <p class="number">4</p>
+                <p class="text">We take a small equity share with most of the development cost covered</p>
+            </div>
+            <div class="small-card">
+                <p class="number">5</p>
+                <p class="text">Making a new brand and first
+                    public release</p>
+            </div>
+            <div class="small-card">
+                <p class="number">6</p>
+                <p class="text">Ongoing consulting and optimizin of business strategy, customer care and scaling</p>
+            </div>
+            <div class="small-card">
+                <p class="number">7</p>
+                <p class="text">Marketing automation by using dialog selling system and content generation based on
+                    first clients feedback and analytics of their behavior</p>
+            </div>
+            <div class="small-card">
+                <p class="number">8</p>
+                <p class="text">We help you to sell this business in six-to-twelve months and professional support in
+                    dealing
+                    with brokers</p>
+            </div>
+        </div>
+        <h2 class="mobile">Latest works</h2>
+        <div class="block card-with-picture-block">
             <div class="card-with-picture">
                 <img :src="boomerang" alt="">
                 <div class="text-block">
@@ -209,7 +251,7 @@
                 <div class="left-block">
                     <h2>Technical <br /> overview</h2>
                     <a href="/" class="visit-link">
-                        <p>Visit website</p>
+                        <p>Our services</p>
                         <img :src="arrRight" alt="">
                     </a>
                 </div>
@@ -646,6 +688,7 @@ export default {
 
                     p {
                         color: #B6FFFA;
+                        margin-right: 5px;
                     }
                 }
             }
@@ -745,8 +788,266 @@ export default {
         }
     }
 }
+
+.mobile {
+    display: none;
+}
 </style>
 
 // Mobile
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media (max-width: 360px) {
+
+    .mobile {
+        display: block;
+    }
+
+    .main-block {
+        overflow: hidden;
+
+        .main-container {
+            background: url("/src/assets/HomeView/hands-mobile.png");
+            text-align: left;
+            background-repeat: no-repeat;
+
+            .main-text {
+                font-size: 33px;
+                margin-top: 10px;
+                padding: 0 20px;
+
+            }
+
+            .introducing {
+                padding-top: 35px;
+                font-size: 20px;
+                margin-bottom: 0;
+                padding: 0 20px;
+
+            }
+
+            .offer {
+                line-height: 28px;
+                padding: 0 20px;
+
+            }
+
+            .more-button {
+                margin: 20px;
+                padding: 0 20px;
+                width: 90%;
+                // text-align: center;
+            }
+
+            .main-info {
+                background-image: url("src/assets/HomeView/lines-moblie.svg");
+                height: 620px;
+
+                .main-info-container {
+                    flex-direction: column;
+                    margin: 0;
+
+                    div {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .meet-our-agents {
+        margin: 20px;
+
+        h2 {
+            text-align: left;
+        }
+
+        .cards-block {
+            flex-direction: column;
+            margin: 0;
+            max-width: 320px;
+
+            div {
+                max-width: 100px;
+                min-width: 320px;
+
+                .text {
+                    max-width: 240px;
+                }
+            }
+        }
+    }
+
+    .third-block {
+        margin: 0 20px;
+
+        .block {
+            flex-direction: column;
+            margin: 0;
+
+            .big-with-checks {
+                max-width: 320px;
+                min-width: 320px;
+                margin-bottom: 10px;
+                max-height: none;
+
+                .left {
+                    .title {
+                        max-width: 285px;
+                        font-size: 24px;
+                    }
+
+                    .checks {
+                        .check {
+                            margin: 20px 0;
+                            width: 100%;
+                        }
+
+                        span {
+                            width: 200px
+                        }
+                    }
+
+                    span {
+                        line-height: 20px;
+                        max-width: 170px;
+                    }
+                }
+
+                .right {
+                    display: none;
+                }
+
+
+            }
+
+            .wishes-card {
+                display: none !important;
+            }
+        }
+
+        .small-cards-container {
+            display: none !important;
+        }
+
+        .card-with-picture-block {
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            // width: 1000px;
+
+
+            .card-with-picture {
+                min-width: 280px;
+                margin-right: 10px !important;
+            }
+
+            .card-with-picture:last-child {
+                margin-right: 0 !important;
+            }
+
+            img {
+                max-width: 280px;
+            }
+        }
+
+        .how-it-works-block {
+            display: flex;
+            overflow-x: scroll;
+
+            .small-card {
+                background-color: #2f2e2e;
+                min-width: 280px;
+                margin-right: 10px;
+                height: 215px;
+
+
+                .number {
+                    color: #B6FFFA;
+                    border: 3px solid #B6FFFA;
+                    border-radius: 16px;
+                    display: inline-block;
+                    padding: 8px 16px;
+                    font-family: "SF Pro";
+                    font-size: 24px;
+                    margin: 40px 0 0 40px;
+                }
+
+                .text {
+                    margin: 20px 40px 0 40px;
+                    font-family: "SF Pro";
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .technical-overview {
+        background-image: none;
+        margin-top: 30px;
+
+        .technical-block {
+            flex-direction: column;
+            margin: 0 20px !important;
+            max-width: 320px;
+
+            .left-block {
+                .visit-link {
+                    text-wrap: nowrap;
+                }
+            }
+
+            .right-block {
+                flex-direction: column;
+                max-width: 320px;
+                margin-top: 20px !important;
+            }
+        }
+    }
+
+    .expecting-block {
+        margin: 500px 20px 100px 20px !important;
+
+        h2 {
+            text-align: left !important;
+        }
+
+        .second-block {
+
+            .left {
+                margin: 20px !important;
+
+                .title {
+                    font-size: 24px !important;
+                }
+            }
+
+            .right {
+                display: none !important;
+            }
+        }
+
+        .third-block {
+            display: flex !important;
+            flex-direction: column !important;
+            margin: 10px 0 !important;
+            grid-gap: 0 !important;
+
+            div {
+                margin-bottom: 0 !important;
+            }
+
+            .info-card {
+                margin-bottom: 10px !important;
+                max-width: 240px;
+            }
+        }
+    }
+
+    .breaker:last-child {
+        display: none;
+    }
+}
+</style>

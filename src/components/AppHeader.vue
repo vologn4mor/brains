@@ -169,7 +169,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-width: 280px;
+        min-width: 320px;
 
         div {
             display: flex;
@@ -203,6 +203,7 @@ export default {
         display: flex;
         flex-direction: column;
         padding: 20px 0;
+        width: 100%;
 
         .menu-mobile {
             display: flex;

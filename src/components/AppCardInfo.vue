@@ -64,7 +64,7 @@ export default {
 
             .text {
                 transition: 0.5s;
-                opacity: 1;
+                opacity: 0.5;
                 font-family: "SF Pro";
                 font-size: 18px;
                 margin-top: 10px;
@@ -104,6 +104,29 @@ export default {
 
     .schedule {
         opacity: 1;
+    }
+}
+</style>
+
+<style scoped lang="scss">
+@media (max-width: 360px) {
+    .card-info {
+        max-height: none;
+
+        .card-info-block {
+            justify-content: space-between;
+
+
+            .left {
+
+                .text {
+                    max-width: 240px;
+                }
+
+                .title {}
+            }
+        }
+
     }
 }
 </style>
