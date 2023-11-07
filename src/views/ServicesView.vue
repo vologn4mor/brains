@@ -372,3 +372,78 @@ export default {
     margin: 160px 0 106px 0;
 }
 </style>
+
+<style scoped lang="scss">
+@media (max-width: 360px) {
+    .services-block {
+        overflow: hidden;
+
+        .main-block {
+            text-align: left;
+
+            .introducing {
+                margin: 0 20px;
+                font-size: 16px;
+            }
+
+            .main-text {
+                font-size: 30px;
+                margin: 0 20px;
+            }
+
+            .complete {
+                margin: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .build-block {
+        .build-cards {
+            flex-direction: column;
+            margin: 0 20px;
+            width: 320px;
+            width: 100%;
+
+            div {
+                margin-bottom: 10px;
+                max-width: 240px;
+                width: 100%;
+            }
+        }
+    }
+
+    .tokenize-block {
+
+        .tokenize-cards {
+            flex-direction: column;
+            margin: 0 20px;
+
+            .middle,
+            .left {
+                margin-bottom: 10px;
+            }
+
+            .left,
+            .middle,
+            .right {
+                max-width: 320px;
+            }
+        }
+    }
+
+    .sell-block {
+        .sell-cards {
+            margin: 0 20px 50px 20px;
+
+            .sell-card {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .breaker {
+        display: none;
+    }
+}
+</style>
