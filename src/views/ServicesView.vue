@@ -427,7 +427,9 @@ export default {
             .left,
             .middle,
             .right {
-                max-width: 320px;
+                div {
+                    width: 240px;
+                }
             }
         }
     }

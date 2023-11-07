@@ -12,7 +12,8 @@
         </div>
         <div class="second-container container">
             <div class="second-block">
-                <img :src="secondBlockImage" alt="">
+                <img :src="secondBlockImage" alt="" class="second-block-image">
+                <img :src="secondBlockImageMobile" alt="" class="second-block-image-mobile">
                 <div class="info">
                     <div class="left">
                         <img :src="atom" alt="atom">
@@ -72,6 +73,7 @@
                 <AppCard>
                     <div class="block-container">
                         <div class="left">
+                            <img :src="first" alt="" class="first-mobile">
                             <img :src="cup" alt="img">
                             <p class="colored">What we do</p>
                             <p class="title">Empowering Web3 Startups with Intelligent Agents</p>
@@ -108,7 +110,7 @@
                         </div>
                         <div class="right">
                             <div>
-                                <img :src="first" alt="img">
+                                <img :src="first" alt="img" class="first">
                             </div>
                             <div>
                                 <img :src="second" alt="img">
@@ -125,6 +127,7 @@
 
 <script>
 import secondBlockImage from "@/assets/AboutView/second-block-img.png"
+import secondBlockImageMobile from "@/assets/AboutView/second-block-img-mobile.png"
 import atom from "@/assets/AboutView/atom.svg"
 import AppCard from "../components/AppCard.vue";
 import fourthBlockData from "@/jsons/AboutView/fourth-block.js"
@@ -138,6 +141,7 @@ export default {
     data() {
         return {
             secondBlockImage,
+            secondBlockImageMobile,
             atom,
             fourthBlockData,
             first,
@@ -341,5 +345,122 @@ export default {
 
 .breaker {
     margin: 200px 0 59px 0;
+}
+
+.first-mobile,
+.second-block-image-mobile {
+    display: none;
+}
+</style>
+
+<style scoped lang="scss">
+@media (max-width: 360px) {
+
+    .main-container {
+        background: url("/src/assets/AboutView/main-lines-mobile.svg");
+        min-height: 638px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: center;
+
+        .main-block {
+            margin: 0 20px;
+
+            .main-text {
+                font-size: 43px;
+                text-align: left;
+            }
+
+            .pioneers {
+                text-align: left;
+            }
+        }
+    }
+
+    .second-block {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 120px 20px 100px 20px !important;
+
+        .second-block-image {
+            display: none;
+        }
+
+        .second-block-image-mobile {
+            display: block;
+        }
+
+        .info {
+            flex-direction: column;
+
+            img {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
+    .main-info {
+        .main-info-container {
+            flex-direction: column;
+            background-image: url("/src/assets/AboutView/main-info-lines-mobile.svg");
+            height: 620px;
+            margin-top: 100px;
+            align-items: center;
+
+            div {
+                margin: 0 20px;
+            }
+        }
+    }
+
+    .fourth-block {
+        margin: 500px 20px 50px 20px;
+
+        .up-block {
+            flex-direction: column;
+            margin: 0 auto;
+
+            div {
+                margin-bottom: 10px;
+            }
+        }
+
+        .down-block {
+            margin: 10px 0;
+
+            .block-container {
+                // display: flex;
+
+                flex-direction: column;
+
+                .first-mobile {
+                    display: block;
+                    width: 240px;
+                    margin-bottom: 40px;
+                }
+
+                .first {
+                    display: none;
+                }
+
+                .right {
+                    margin-top: 18px;
+
+                    div:last-child {
+                        img {
+                            height: auto;
+                            width: 115px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .breaker {
+        display: none;
+    }
 }
 </style>
