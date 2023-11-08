@@ -51,3 +51,9 @@ export default {
     }
 }
 </style>
+
+<style scoped lang="scss">
+img {
+    max-width: 80px;
+}
+</style>

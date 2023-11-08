@@ -3,7 +3,7 @@ import hearts from "@/assets/ScalingView/Proposition/hearts.svg";
 import chat from "@/assets/ScalingView/Proposition/chat.svg";
 import emoji from "@/assets/ScalingView/Proposition/emoji.svg";
 import users from "@/assets/ScalingView/Proposition/users.svg";
-import passport from "@/assets/ScalingView/Proposition/cart.svg";
+import passport from "@/assets/ScalingView/Proposition/passport.svg";
 
 export default [
   {

@@ -63,6 +63,15 @@
                             :title="item.title" :text="item.text" />
                     </div>
                 </div>
+                <div class="send-us-mobile">
+                    <AppCard>
+                        <p class="title">Send us a message</p>
+                        <AppInput placeholder="Name" />
+                        <AppInput placeholder="Email" />
+                        <AppInput placeholder="Message" />
+                        <AppButton text="Submit" paddin="15px 40px" />
+                    </AppCard>
+                </div>
             </div>
         </div>
         <div class="breaker-lines breaker"></div>
@@ -71,6 +80,7 @@
                 <AppCard>
                     <div class="block-container">
                         <div class="left">
+                            <img :src="first" alt="" class="first-mobile">
                             <img :src="atom" alt="img">
                             <p class="colored">Our mission</p>
                             <p class="title">Innovate, Thrive, Succeed: Brains and Intelligent Agents Fuel Your Web3
@@ -99,7 +109,7 @@
                         </div>
                         <div class="right">
                             <div>
-                                <img :src="first" alt="img">
+                                <img :src="first" alt="img" class="first-desktop">
                             </div>
                             <div>
                                 <img :src="second" alt="img">
@@ -325,6 +335,145 @@ export default {
 
     }
 
+}
 
+.first-mobile,
+.send-us-mobile {
+    display: none;
+}
+</style>
+
+<style scoped lang="scss">
+@media (max-width: 360px) {
+    .main-container {
+        background: url("/src/assets/ContactsView/main-lines-mobile.svg");
+        min-height: 529px;
+
+        .main-block {
+            margin: 0 20px;
+
+            .content {
+                flex-direction: column;
+                margin-top: 100px;
+                align-items: start;
+
+                .left {
+
+                    .colored {
+                        text-align: left;
+                        font-size: 24px
+                    }
+
+                    .main-text {
+                        text-align: left;
+                        font-size: 44px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                .right {
+                    .points {
+                        .point {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .second-block {
+        margin: 100px 20px 0 20px !important;
+
+        .up {
+            div:last-child {
+                display: none;
+            }
+
+            div {
+                max-width: 280px;
+
+                padding-right: 40px;
+
+                .card {
+                    padding: 0px;
+
+                    .left {
+                        padding-right: 40px;
+
+                        .colored {
+                            max-width: 200px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .down {
+            .cards-block {
+                flex-direction: column;
+
+                .card {
+                    max-width: 240px !important;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .send-us-mobile {
+            display: block;
+            max-width: 320px;
+
+            .title {
+                font-size: 20px;
+            }
+
+            input {
+                max-width: 200px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 10px;
+                padding: 20px;
+            }
+        }
+    }
+
+    .third-block {
+        .card-block {
+            margin: 0 20px 90px 20px;
+
+            .block-container {
+                flex-direction: column;
+
+                .right {
+                    img {
+                        max-width: 115px;
+                    }
+                }
+            }
+        }
+
+        .first-mobile {
+            display: block;
+            max-width: 240px;
+            margin-bottom: 40px;
+        }
+
+        .first-desktop {
+            display: none;
+        }
+    }
+
+    .breaker {
+        margin: 100px 0;
+    }
+
+    .breaker:last-child {
+        display: none;
+    }
 }
 </style>

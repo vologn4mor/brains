@@ -105,3 +105,37 @@ export default {
     margin: 100px 0 76px 0;
 }
 </style>
+
+<style scoped lang="scss">
+@media (max-width:360px) {
+    .blockchain-block {
+        margin: 0 20px 100px 20px;
+        flex-direction: column-reverse;
+        padding-top: 125px;
+
+        .right {
+            img {
+                max-width: 320px;
+            }
+
+            margin-bottom: 10px;
+        }
+
+        .left {
+            .points {
+                .point {
+                    line-height: 24px;
+                }
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    .breaker {
+        display: none;
+    }
+}
+</style>

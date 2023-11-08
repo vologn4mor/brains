@@ -131,3 +131,40 @@ export default {
     margin: 200px 0 86px 0;
 }
 </style>
+
+<style scoped lang="scss">
+@media (max-width: 360px) {
+    .main-container {
+        background: url("/src/assets/OnboardingView/main-lines-mobile.svg");
+        min-height: 914px;
+
+
+        .main-block {
+            margin: 0 20px;
+        }
+
+        .main-text {
+            font-size: 28px;
+            padding-top: 30px;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .second-block {
+        margin: 0 20px 100px 20px;
+
+        .cards-block {
+            .card {
+                max-width: 240px !important;
+            }
+        }
+    }
+
+    .breaker {
+        display: none;
+    }
+}
+</style>

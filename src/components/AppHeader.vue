@@ -93,6 +93,12 @@ export default {
     components: { AppButton },
     methods: {
         updateCurrentRoute(path) {
+            if (this.$route.fullPath === "/scaling") {
+                return {
+                    title: "Scaling"
+                }
+            }
+
             const route = this.routes.filter(item => {
                 return item.path === path
             })

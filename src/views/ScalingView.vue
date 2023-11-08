@@ -375,3 +375,188 @@ h2 {
     }
 }
 </style>
+
+<style scoped lang="scss">
+@media (max-width: 360px) {
+
+    .main-block {
+
+        .colored,
+        .main-text {
+            text-align: left;
+            margin: 0 20px;
+        }
+
+        .main-text {
+            font-size: 41px;
+        }
+
+        .colored {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .problem-block {
+        margin: 0 20px;
+
+        .cards {
+            flex-direction: column;
+
+            .card {
+                max-width: 240px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .solution-block {
+        margin: 0 20px;
+
+        .cards {
+            flex-direction: column;
+
+            .card {
+                max-width: 240px;
+                margin-bottom: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .proposition-block {
+
+        h2 {
+            font-size: 41px;
+        }
+
+        flex-direction: column;
+        margin: 0 20px;
+
+        .cards {
+            flex-direction: column;
+
+            .card {
+                max-width: 320px;
+                padding: 0;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .market-block {
+
+        h2 {
+            font-size: 41px;
+            text-align: left;
+        }
+
+        margin: 0 20px;
+
+        .cards {
+            flex-wrap: nowrap;
+            overflow-y: scroll;
+
+            .card {
+                min-width: 200px;
+                margin-right: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .business-block {
+        margin: 0;
+
+        h2 {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .cards {
+            flex-direction: column;
+
+
+            .card {
+                flex-direction: column;
+                margin-bottom: 10px;
+                max-width: 320px;
+                padding: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .analysis-container {
+        background-image: url("/src/assets/ScalingView/seventh-lines-mobile.svg");
+        height: 1274px;
+
+        .analysis-block {
+            margin: 0 20px !important;
+            flex-direction: column;
+
+            .left {
+                h2 {
+                    margin-top: 90px;
+                    text-align: left;
+                    margin-bottom: 10px;
+                    font-size: 41px;
+                }
+
+                p {
+                    max-width: 308px;
+                    font-size: 18px;
+                    font-family: "SF Pro";
+                    opacity: 0.5;
+                }
+            }
+
+            .cards {
+                flex-direction: column;
+                margin-top: 20px !important;
+
+                .card {
+                    max-width: 240px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .projections-block {
+        margin: 0 20px 100px 20px;
+        flex-direction: column;
+
+        .left {
+            padding: 0;
+
+            p {
+                opacity: 0.5;
+            }
+        }
+
+        .right {
+            .cards {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+
+                .card {
+                    min-width: 200px;
+                    max-width: none;
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+
+}
+</style>
