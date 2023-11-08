@@ -93,7 +93,9 @@ export default {
     components: { AppButton },
     methods: {
         updateCurrentRoute(path) {
+
             if (this.$route.fullPath === "/scaling") {
+                document.title = "Scaling - Brainz";
                 return {
                     title: "Scaling"
                 }
@@ -102,6 +104,11 @@ export default {
             const route = this.routes.filter(item => {
                 return item.path === path
             })
+
+            if (route.length) {
+                if (route[0].title === "Home") document.title = "Brainz"
+                else document.title = route.length ? `${route[0].title} - Brainz` : "Brainz";
+            }
 
             return route.length ? route[0] : null
         }
