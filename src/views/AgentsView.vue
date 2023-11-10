@@ -107,7 +107,7 @@ export default {
 </style>
 
 <style scoped lang="scss">
-@media (max-width:360px) {
+@media (max-width:700px) {
     .blockchain-block {
         margin: 0 20px 100px 20px;
         flex-direction: column-reverse;
@@ -115,7 +115,7 @@ export default {
 
         .right {
             img {
-                max-width: 320px;
+                max-width: 100%;
             }
 
             margin-bottom: 10px;

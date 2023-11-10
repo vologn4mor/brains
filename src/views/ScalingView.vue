@@ -377,7 +377,7 @@ h2 {
 </style>
 
 <style scoped lang="scss">
-@media (max-width: 360px) {
+@media (max-width: 700px) {
 
     .main-block {
 
@@ -408,7 +408,8 @@ h2 {
             flex-direction: column;
 
             .card {
-                max-width: 240px;
+                max-width: none;
+                width: auto;
                 margin-bottom: 10px;
             }
         }
@@ -421,7 +422,8 @@ h2 {
             flex-direction: column;
 
             .card {
-                max-width: 240px;
+                max-width: none;
+                width: auto;
                 margin-bottom: 10px;
                 flex-direction: column;
             }
@@ -441,7 +443,8 @@ h2 {
             flex-direction: column;
 
             .card {
-                max-width: 320px;
+                max-width: none;
+                width: auto;
                 padding: 0;
                 margin: 0 auto;
                 margin-bottom: 10px;
@@ -481,12 +484,14 @@ h2 {
 
         .cards {
             flex-direction: column;
+            margin: 0 20px;
 
 
             .card {
                 flex-direction: column;
                 margin-bottom: 10px;
-                max-width: 320px;
+                max-width: none;
+                width: auto;
                 padding: 0;
                 margin: 0 auto;
             }
@@ -510,7 +515,8 @@ h2 {
                 }
 
                 p {
-                    max-width: 308px;
+                    // max-width: 308px;
+                    max-width: none;
                     font-size: 18px;
                     font-family: "SF Pro";
                     opacity: 0.5;
@@ -522,7 +528,8 @@ h2 {
                 margin-top: 20px !important;
 
                 .card {
-                    max-width: 240px;
+                    max-width: none;
+                    width: auto;
                     margin-bottom: 10px;
                 }
             }
@@ -535,6 +542,7 @@ h2 {
 
         .left {
             padding: 0;
+            max-width: none;
 
             p {
                 opacity: 0.5;

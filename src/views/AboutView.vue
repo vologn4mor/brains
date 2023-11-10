@@ -354,7 +354,7 @@ export default {
 </style>
 
 <style scoped lang="scss">
-@media (max-width: 360px) {
+@media (max-width: 700px) {
 
     .main-container {
         background: url("/src/assets/AboutView/main-lines-mobile.svg");
@@ -424,6 +424,7 @@ export default {
 
             div {
                 margin-bottom: 10px;
+                max-width: none;
             }
         }
 
@@ -437,7 +438,8 @@ export default {
 
                 .first-mobile {
                     display: block;
-                    width: 240px;
+                    // width: 240px;
+                    width: 100%;
                     margin-bottom: 40px;
                 }
 
@@ -451,7 +453,7 @@ export default {
                     div:last-child {
                         img {
                             height: auto;
-                            width: 115px;
+                            width: 40%;
                         }
                     }
                 }

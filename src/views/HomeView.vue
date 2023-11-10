@@ -809,6 +809,8 @@ export default {
 
         .main-container {
             background: url("/src/assets/HomeView/hands-mobile.png");
+            background-position-y: -250px;
+            background-size: 100%;
             text-align: left;
             background-repeat: no-repeat;
 
@@ -1071,12 +1073,11 @@ export default {
     }
 }
 </style>
-<!-- 
+
 <style>
-@media (max-width: 360px) {
+@media (max-width: 500px) {
     .main-container {
-        width: 100%;
-        background: url("/src/assets/HomeView/hands-mobile.png");
+        background-position-y: -150px !important;
     }
 }
-</style> -->
+</style>

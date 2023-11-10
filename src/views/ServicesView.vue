@@ -374,7 +374,7 @@ export default {
 </style>
 
 <style scoped lang="scss">
-@media (max-width: 360px) {
+@media (max-width: 700px) {
     .services-block {
         overflow: hidden;
 
@@ -402,13 +402,10 @@ export default {
         .build-cards {
             flex-direction: column;
             margin: 0 20px;
-            width: 320px;
-            width: 100%;
 
             div {
                 margin-bottom: 10px;
-                max-width: 240px;
-                width: 100%;
+                width: auto;
             }
         }
     }
@@ -428,7 +425,8 @@ export default {
             .middle,
             .right {
                 div {
-                    width: 240px;
+                    width: auto;
+                    height: auto !important;
                 }
             }
         }

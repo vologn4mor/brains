@@ -133,7 +133,7 @@ export default {
 </style>
 
 <style scoped lang="scss">
-@media (max-width: 360px) {
+@media (max-width: 700px) {
     .main-container {
         background: url("/src/assets/OnboardingView/main-lines-mobile.svg");
         min-height: 914px;
@@ -157,8 +157,12 @@ export default {
         margin: 0 20px 100px 20px;
 
         .cards-block {
+            flex-direction: column;
+
             .card {
-                max-width: 240px !important;
+                // margin: 10px;
+                max-width: none !important;
+                width: auto;
             }
         }
     }

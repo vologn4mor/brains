@@ -344,7 +344,7 @@ export default {
 </style>
 
 <style scoped lang="scss">
-@media (max-width: 360px) {
+@media (max-width: 700px) {
     .main-container {
         background: url("/src/assets/ContactsView/main-lines-mobile.svg");
         min-height: 529px;
@@ -391,7 +391,8 @@ export default {
             }
 
             div {
-                max-width: 280px;
+                max-width: none;
+                width: 100%;
 
                 padding-right: 40px;
 
@@ -415,7 +416,10 @@ export default {
                 flex-direction: column;
 
                 .card {
-                    max-width: 240px !important;
+                    width: auto;
+                    max-width: none;
+                    // margin: 0 20px;
+                    // max-width: 240px !important;
                     margin-bottom: 10px;
                 }
             }
@@ -423,14 +427,19 @@ export default {
 
         .send-us-mobile {
             display: block;
-            max-width: 320px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
 
             .title {
                 font-size: 20px;
             }
 
             input {
-                max-width: 200px;
+                // max-width: 200px;
+                width: auto;
                 margin-bottom: 10px;
             }
 
@@ -451,7 +460,8 @@ export default {
 
                 .right {
                     img {
-                        max-width: 115px;
+                        max-width: none;
+                        width: 40%;
                     }
                 }
             }
@@ -459,7 +469,8 @@ export default {
 
         .first-mobile {
             display: block;
-            max-width: 240px;
+            // max-width: 240px;
+            width: 100%;
             margin-bottom: 40px;
         }
 
