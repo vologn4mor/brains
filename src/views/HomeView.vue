@@ -5,7 +5,7 @@
             <h1 class="main-text">Intelligent Agents <br /> for Exponential Success</h1>
             <p class="offer">We offer a suite of intelligent agents designed to bring your startup to exponential growth.
             </p>
-            <AppButton text="More about Brainz" padding="15px 40px" class="more-button" />
+            <AppButton text="More about Brainz" padding="15px 40px" class="more-button" @click="$router.push('/about')" />
             <div class="main-info">
                 <div class="main-info-container">
                     <div>

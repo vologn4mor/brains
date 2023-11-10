@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="schedule">
-            <RouterLink to="/">
+            <RouterLink to="/contacts">
                 Shedule a call
             </RouterLink>
         </div>
