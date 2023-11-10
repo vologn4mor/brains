@@ -7,7 +7,7 @@ const routes = [
     component: () => import("../views/HomeView"),
   },
   {
-    path: "/agents",
+    path: "/agents/:agent",
     name: "Agents",
     component: () => import("../views/AgentsView"),
   },

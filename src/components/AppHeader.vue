@@ -55,7 +55,7 @@ export default {
                 },
                 {
                     title: "Agents",
-                    path: "/agents",
+                    path: "/agents/blockchain-manager",
                     img: agents
                 },
                 {

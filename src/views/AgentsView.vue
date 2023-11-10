@@ -4,33 +4,20 @@
             <div class="blockchain-container container">
                 <div class="blockchain-block">
                     <div class="left">
-                        <AppCard>
-                            <p class="title">Blockchain Manager</p>
-                            <p class="text">This comprehensive agent is designed to revolutionize the NFT experience. It
-                                seamlessly integrates the capabilities of multiple specialized agents.</p>
+                        <AppCard type="agent">
+                            <p class="title">{{ openedAgent.title }}</p>
+                            <p class="text">{{ openedAgent.text }}</p>
                             <div class="points">
-                                <div class="point">
+                                <div class="point" v-for="(point, index) in openedAgent.points" :key="index">
                                     <img :src="check" alt="check">
-                                    <p>Multimedia Playback: Enables users to enjoy a rich multimedia experience by playing
-                                        audio, visual, and video NFTs.</p>
-                                </div>
-                                <div class="point">
-                                    <img :src="check" alt="check">
-                                    <p>Minting Simplified: Allows effortless creation and distribution of NFTs, eliminating
-                                        the complexities of cryptocurrency and crypto wallets.</p>
-                                </div>
-                                <div class="point">
-                                    <img :src="check" alt="check">
-                                    <p>Instant Creation: Facilitates real-time crafting of NFTs from a phone or PC, ensuring
-                                        that even those new to the NFT world can create and launch their tokens in under a
-                                        minute.</p>
+                                    <p>{{ point }}</p>
                                 </div>
                             </div>
                             <AppButton text="Try it now!" padding="15px 40px" />
                         </AppCard>
                     </div>
                     <div class="right">
-                        <img :src="image" alt="">
+                        <img :src="openedAgent.img" alt="">
                     </div>
                 </div>
             </div>
@@ -41,9 +28,10 @@
 
 <script>
 import AppCard from '../components/AppCard.vue';
-import image from "@/assets/AgentsView/image.png";
+import image from "@/assets/AgentsView/blockchain-manager.png";
 import check from "@/assets/HomeView/ThirdBlock/check.svg"
 import AppButton from '../components/AppButton.vue';
+import agents from '@/jsons/AgentsView/agents.js'
 
 
 export default {
@@ -51,9 +39,28 @@ export default {
     data() {
         return {
             image,
-            check
+            check,
+            openedAgent: null,
         }
-    }
+    },
+    methods: {
+        updatePage() {
+            let agent = this.$route.params.agent
+            this.openedAgent = agents.filter(item => item.route === agent)[0]
+            if (!this.openedAgent) {
+                agent = "blockchain-manager"
+                this.openedAgent = agents.filter(item => item.route === agent)[0]
+            }
+        }
+    },
+    beforeMount() {
+        this.updatePage();
+    },
+    watch: {
+        $route() {
+            this.updatePage()
+        }
+    },
 }
 </script>
 
@@ -64,9 +71,29 @@ export default {
     justify-content: space-between;
     margin: 0 100px;
 
+    .right {
+        img {
+            width: 615px;
+            height: 544px;
+        }
+    }
+
 
     .left {
         max-width: 615px;
+
+        div {}
+
+        // div {
+        //     height: 544px;
+
+        //     p,
+        //     .point,
+        //     .points,
+        //     img {
+        //         height: fit-content;
+        //     }
+        // }
 
         .points {
             .point {

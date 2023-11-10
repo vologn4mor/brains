@@ -24,7 +24,8 @@
     <div class="meet-our-agents container">
         <h2>Meet our Agents</h2>
         <div class="cards-block">
-            <AppCardInfo v-for="(item, index) in meetOurAgentsInfo" :key="index" :item="item">
+            <AppCardInfo v-for="(item, index) in meetOurAgentsInfo" :key="index" :item="item"
+                :is-hovered="index === meetOurAgentsInfo.length - 1">
             </AppCardInfo>
         </div>
     </div>
@@ -501,6 +502,8 @@ export default {
         display: flex;
         flex-wrap: wrap;
         margin: 40px 99px;
+
+        div:hover {}
     }
 }
 

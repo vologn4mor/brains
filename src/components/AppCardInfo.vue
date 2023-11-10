@@ -1,5 +1,5 @@
 <template>
-    <div class="card-info">
+    <div class="card-info" :class="isHovered ? 'card-info-hover' : null">
         <div class="card-info-block">
             <div class="left">
                 <img :src="item.image" alt="img">
@@ -32,6 +32,11 @@ export default {
         item: {
             type: Object,
             required: true
+        },
+        isHovered: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     components: { RouterLink }
@@ -92,7 +97,7 @@ export default {
     padding: 15px;
 }
 
-.card-info:hover {
+.card-info-hover:hover {
     background-color: #222121;
     transition: 0.5s;
 
