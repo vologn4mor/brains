@@ -1,24 +1,58 @@
-<svg width="360" height="620" viewBox="0 0 360 620" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="360" height="620" fill="#D5D5D5"/>
-<g clip-path="url(#clip0_958_24)">
-<rect width="360" height="11442" transform="translate(0 -673)" fill="#0A0909"/>
-<g opacity="0.05" clip-path="url(#clip1_958_24)">
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 -1.14014 -51)" fill="#B6FFFA"/>
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 64.8599 -51)" fill="#B6FFFA"/>
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 129.819 -51)" fill="#B6FFFA"/>
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 194.779 -51)" fill="#B6FFFA"/>
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 259.738 -51)" fill="#B6FFFA"/>
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 325.738 -51)" fill="#B6FFFA"/>
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 390.697 -51)" fill="#B6FFFA"/>
-<rect width="37.333" height="720.277" transform="matrix(0.931438 0.3639 -0.180744 0.98353 455.656 -51)" fill="#B6FFFA"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_958_24">
-<rect width="360" height="11442" fill="white" transform="translate(0 -673)"/>
-</clipPath>
-<clipPath id="clip1_958_24">
-<rect width="1926" height="620" fill="white" transform="translate(-783)"/>
-</clipPath>
-</defs>
+<svg width="720" height="620" viewBox="0 0 720 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="720" height="620" fill="#d5d5d5" />
+    <g clip-path="url(#clip0_958_24)">
+        <rect x="0" y="-1.7" width="720" height="11442" transform="translate(0,-673)" fill="#0a0909" />
+        <g opacity="0.05" clip-path="url(#clip1_958_24)">
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,-28.8,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,74.3,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,175.9,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,277.4,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,378.9,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,482.1,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,583.6,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,685.1,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,-28.8,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,74.3,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,175.9,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,277.4,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,378.9,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,482.1,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,583.6,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,685.1,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,277.4,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,378.9,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,482.1,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,583.6,-51)"
+                fill="#b6fffa" />
+            <rect x="64.4" y="-25.5" width="37.3" height="720.3" transform="matrix(1.5,0.4,-0.3,1,685.1,-51)"
+                fill="#b6fffa" />
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_958_24">
+            <rect width="720" height="11442" fill="white" transform="translate(0,-673)" />
+        </clipPath>
+        <clipPath id="clip1_958_24">
+            <rect width="1926" height="620" fill="white" transform="translate(-783)" />
+        </clipPath>
+    </defs>
 </svg>

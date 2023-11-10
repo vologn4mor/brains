@@ -87,3 +87,12 @@ export default {
     background-color: #222121;
 }
 </style>
+
+<style>
+@media (max-width: 700px) {
+    .info-card {
+        max-width: none !important;
+        width: auto;
+    }
+}
+</style>

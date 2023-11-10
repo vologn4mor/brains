@@ -797,10 +797,11 @@ export default {
 // Mobile
 
 <style lang="scss" scoped>
-@media (max-width: 360px) {
+@media (max-width: 700px) {
 
     .mobile {
         display: block;
+        margin: 20px
     }
 
     .main-block {
@@ -866,12 +867,14 @@ export default {
 
         .cards-block {
             flex-direction: column;
-            margin: 0;
-            max-width: 320px;
+            margin: 0 auto;
+            // max-width: 320px;
 
             div {
-                max-width: 100px;
+                max-width: none;
+                width: 100%;
                 min-width: 320px;
+                max-height: none;
 
                 .text {
                     max-width: 240px;
@@ -881,21 +884,29 @@ export default {
     }
 
     .third-block {
-        margin: 0 20px;
+        margin: 0 auto;
+        max-width: none;
 
         .block {
             flex-direction: column;
-            margin: 0;
+            margin: 0 20px;
+            // width: fit-content;
+            width: auto;
+            max-width: none;
 
             .big-with-checks {
-                max-width: 320px;
+                max-width: none;
                 min-width: 320px;
                 margin-bottom: 10px;
                 max-height: none;
+                min-height: auto;
 
                 .left {
+                    padding: 40px;
+                    margin-left: 0;
+
                     .title {
-                        max-width: 285px;
+                        max-width: auto;
                         font-size: 24px;
                     }
 
@@ -906,13 +917,13 @@ export default {
                         }
 
                         span {
-                            width: 200px
+                            width: auto
                         }
                     }
 
                     span {
                         line-height: 20px;
-                        max-width: 170px;
+                        max-width: auto;
                     }
                 }
 
@@ -936,7 +947,8 @@ export default {
             display: flex;
             flex-direction: row;
             overflow-x: scroll;
-            // width: 1000px;
+            width: auto;
+            margin: 0 20px;
 
 
             .card-with-picture {
@@ -956,6 +968,7 @@ export default {
         .how-it-works-block {
             display: flex;
             overflow-x: scroll;
+            margin: 0 20px;
 
             .small-card {
                 background-color: #2f2e2e;
@@ -982,6 +995,7 @@ export default {
                 }
             }
         }
+
     }
 
     .technical-overview {
@@ -1012,6 +1026,12 @@ export default {
 
         h2 {
             text-align: left !important;
+        }
+
+        .first-block {
+            .card-with-img {
+                max-width: none !important;
+            }
         }
 
         .second-block {
@@ -1051,3 +1071,12 @@ export default {
     }
 }
 </style>
+<!-- 
+<style>
+@media (max-width: 360px) {
+    .main-container {
+        width: 100%;
+        background: url("/src/assets/HomeView/hands-mobile.png");
+    }
+}
+</style> -->

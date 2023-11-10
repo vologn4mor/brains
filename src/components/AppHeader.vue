@@ -173,7 +173,7 @@ export default {
 // Mobile
 
 <style lang="scss" scoped>
-@media (max-width: 360px) {
+@media (max-width: 700px) {
     .menu {
         display: none !important;
     }
@@ -182,7 +182,8 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-width: 320px;
+        width: 90%;
+        margin: 0 20px;
 
         div {
             display: flex;
