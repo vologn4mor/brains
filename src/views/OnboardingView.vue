@@ -136,6 +136,7 @@ export default {
 @media (max-width: 700px) {
     .main-container {
         background: url("/src/assets/OnboardingView/main-lines-mobile.svg");
+        background-repeat: no-repeat;
         min-height: 914px;
 
 

@@ -347,6 +347,7 @@ export default {
 @media (max-width: 700px) {
     .main-container {
         background: url("/src/assets/ContactsView/main-lines-mobile.svg");
+        background-repeat: no-repeat;
         min-height: 529px;
 
         .main-block {
@@ -354,7 +355,7 @@ export default {
 
             .content {
                 flex-direction: column;
-                margin-top: 100px;
+                margin-top: 70px;
                 align-items: start;
 
                 .left {
@@ -366,8 +367,8 @@ export default {
 
                     .main-text {
                         text-align: left;
-                        font-size: 44px;
-                        margin-bottom: 50px;
+                        font-size: 40px;
+                        margin-bottom: 20px;
                     }
                 }
 
